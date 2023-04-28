@@ -1,0 +1,237 @@
+/****************************** COLOR PALETTE START *****************************
+#F2F2F2 - light grey
+#EB5428 - orange
+#0D0D0D - black
+#7ABFBF - dark teal
+rgba(122, 191, 191, .5) - light teal
+****************************** COLOR PALETTE END *****************************/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+/****************************** TYPOGRAPHY STYLE START *****************************/
+h1, h2, h3, nav a, nav span, menu li, #social li, footer {
+	font-family: 'Bebas Neue', cursive;
+}
+p, dd, li, nav, input {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+}
+dt {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+}
+h1 {
+	font-size: 40px;
+	text-align: center;
+}
+h2 {
+	font-size: 30px;
+	text-align: center;
+}
+h3 {
+	font-size: 25px;
+	margin: auto 0;
+	padding: 0;
+}
+nav a {
+	text-decoration: none;
+	font-size: 20px;
+}
+nav span {
+	font-size: 20px;
+}
+menu li {
+	font-size: 20px;
+}
+#social li {
+	font-size: 20px;
+}
+footer {
+	font-size: 20px;
+}
+#utility-menu li, #footer-menu li {
+	color: #EB5428;
+	list-style: none;
+}
+/****************************** TYPOGRAPHY STYLE END *****************************/
+
+/****************************** RESPONSIVE STYLES START *****************************/
+@media only screen and (min-width: 414px) {
+	#menu {
+		display: none;
+	}
+	nav, #utility-menu, #footer-menu, #body-search-container, #search-container, .sides-item{
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0 2px;
+	}
+	nav div, #utility-menu li, #footer-menu li, #body-search-container input, #search-container input, #body-search-container button, #search-container button, .sidesImg, .sidesTxt{
+		padding-top: 10px;
+		padding-bottom: 10px;
+		width: 25%;
+		word-wrap: break-word;
+		box-sizing: border-box;
+		text-align: center;
+	}
+	.action-button{
+		text-align: center;
+		color: #000000;
+	}
+	#logo-container{
+		background-color: #EB5428;
+		width: 50%;
+	}
+	#search-container, #body-search-container{
+		background-color: #f2f2f2;
+		padding: 40px;
+		margin: auto 0;
+	}
+	#search-container input, #body-search-container input{
+		padding: 0;
+		width: 85%;
+		border-style: solid;
+		border-color: #EB5428;
+		text-align: start;
+	}
+	#search-container button, #body-search-container button{
+		width: 15%;
+		padding: 0;
+		background-color: #EB5428;
+		border-style: none;
+	}
+	body, #showcase img {
+		width: 414px;
+		margin: auto 0;
+	}
+    #search-container {
+        display: none;
+    }
+}
+@media only screen and (min-width: 768px) {
+    body, #showcase img {
+		width: 768px;
+		margin: auto 0;
+	}
+    #hamburger-button {
+        display: none;
+    }
+
+    #showcase {
+        width: 100%;
+    }
+    #ingredients, #directions {
+        width: 50%;
+    }
+    #logo-container{
+        width: 10%;
+    }
+    .action-button {
+        float: right;
+    }
+    #search-container, #body-search-container {
+        width: 65%;
+    }
+    #body-search-container {
+        display: none;
+    }
+    #search-container {
+        display:flex;
+        padding-left: 25%;
+    }
+
+    h1 {
+        text-align: start;
+    }
+    p,li {
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 1280px) {
+}
+/****************************** RESPONSIVE STYLES END *****************************/
+html {
+	background-color: rgba(122, 191, 191, .5);
+}
+main {
+	margin: 0 auto;
+}
+header {
+	background: #ffffff;
+}
+nav {
+	background-color: #F2F2F2;
+}
+nav :after{
+	content: "";
+	position: absolute;
+	width: 100%;
+	bottom: 1px;
+	z-index: -1;
+	transform: scale(.9);
+	box-shadow: 0 0 8px 2px #000000;
+}
+body {
+	background-color: #F2F2F2;
+}
+#sides {
+	background-color: #7ABFBF;
+}
+.sides-container {
+}
+.sides-item img {
+	max-width: 100%;
+	max-height: 100%;
+}
+.sidesImg {
+	padding: 10px;
+}
+.sidesTxt {
+	width: 75%;
+	text-align: start;
+	padding: 10px;
+}
+.flex-container-sides {
+	display: grid;
+}
+#logo{
+	background-color: #EB5428;
+}
+footer {
+	text-align: center;
+	color: #000000;
+	justify-content: center;
+}
+footer p {
+	font-size: 12px;
+}
+footer img {
+	margin: auto;
+	display: block;
+}
+#circle-clip {
+	clip-path: circle(800px at center);
+	width: 50%;
+}
+li {
+	margin-bottom: 10px;
+}
+p {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.star-full {
+	background: url("data: image/svg+xml,%3Csvg xmlns='http: //www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-star' width='30' height='30' viewBox='0 0 24 24' stroke-width='1.5' stroke='%23ffffff' fill='%23EB5428' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z' /%3E%3C/svg%3E") no-repeat;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+}
+.star-empty {
+	background: url("data: image/svg+xml,%3Csvg xmlns='http: //www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-star' width='30' height='30' viewBox='0 0 24 24' stroke-width='1.5' stroke='%23ffffff' fill='%23ffffff' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z' /%3E%3C/svg%3E") no-repeat;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+}
+
+/*About 500 Lines of CSS Code Needed*/
+* {
+	align-content: center;
+}
